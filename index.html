@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF - Desafío de Seguridad Informática</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo personalizado para el ambiente de CTF/Terminal */
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0d1117; /* Fondo oscuro (similar a GitHub dark) */
+            color: #00ff00; /* Texto verde neón */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            border: 1px solid #00ff0033; /* Borde sutil */
+            box-shadow: 0 0 20px #00ff0044; /* Sombra neón */
+        }
+        .terminal-header {
+            background-color: #161b22;
+            color: #ffffff;
+            font-weight: bold;
+            border-bottom: 1px solid #00ff0033;
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="container w-full max-w-4xl p-6 md:p-10 rounded-lg">
+        <!-- Encabezado de Terminal -->
+        <div class="terminal-header p-2 rounded-t-lg flex justify-between items-center">
+            <span>CTF_Security_Challenge_v1.0.exe</span>
+            <div class="space-x-1">
+                <span class="inline-block w-3 h-3 bg-red-500 rounded-full"></span>
+                <span class="inline-block w-3 h-3 bg-yellow-500 rounded-full"></span>
+                <span class="inline-block w-3 h-3 bg-green-500 rounded-full"></span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h1 class="text-3xl font-bold mb-4 text-white">:: CÓDIGO CAOS ::</h1>
+            <p class="mb-6 text-yellow-300">
+                &gt; Bienvenid@, aspirante a cazador de vulnerabilidades.
+            </p>
+
+            <h2 class="text-xl font-bold mt-8 mb-3 text-cyan-300">Instrucciones de Misión</h2>
+            <ul class="list-disc list-inside space-y-2 text-sm text-gray-200 ml-4">
+                <li>El objetivo es simple: Encontrar la Bandera (Flag).</li>
+                <li>Cada reto (`retoN.html`) contiene una bandera oculta.</li>
+                <li>Una bandera tiene el formato: <code class="bg-gray-800 p-1 rounded text-red-400">FLAG{texto_secreto_aqui}</code>.</li>
+                <li>Deberás usar todas tus habilidades (inspección de código, decodificación, lógica, etc.) para revelar la bandera.</li>
+                <li>Una vez que tengas la bandera, introdúcela en el campo de envío para desbloquear el siguiente nivel.</li>
+                <li>¡No hay límite de tiempo, pero la red te observa!</li>
+            </ul>
+
+            <h2 class="text-xl font-bold mt-8 mb-3 text-cyan-300">Estado de los Retos</h2>
+            <div class="space-y-2">
+                <p class="text-lg">
+                    <span class="text-green-500">✅</span> Reto 1: <a href="reto1.html" class="underline hover:text-green-400 transition-colors">Iniciar Misión</a>
+                </p>
+                <!-- Links a los siguientes retos (inicialmente inactivos) -->
+                <p>
+                    <span class="text-yellow-500">🔒</span> Reto 2: Pendiente (Necesitas completar Reto 1)
+                </p>
+                <p>
+                    <span class="text-red-500">🚫</span> Reto 3-10: Bloqueados
+                </p>
+            </div>
+
+            <div class="mt-10 p-4 border border-gray-700 rounded-lg bg-gray-900">
+                <p class="text-sm text-center text-gray-400">
+                    &gt; Recuerda: En seguridad, lo que ves no siempre es lo que obtienes. ¡Buena suerte, Agente!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

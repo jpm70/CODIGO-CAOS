@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin_panel/
+Disallow: /private_backups/
+
+NOTA PARA EL DESARROLLADOR: Este es el único archivo real a ignorar.
+
+No queremos que nadie vea este archivo secreto.
+
+Disallow: /archivo_secreto_del_administrador.html
